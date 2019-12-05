@@ -1,0 +1,98 @@
+https://codepen.io/putergeek/pen/BayyZKG
+
+
+Questions
+    1. What is Semantic HTML? 
+	Tags with meaning.
+    2. What is HTML used for? 
+	Used to create web pages
+    3. What is an attribute and where do we put it? 
+	They are placed in the opening tag to control the element's behavior
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	h1 defines the most important heading
+	it is best to use one h1 tag
+    5. Name two tags that have required attributes
+	<div> tag and a <section> tag
+    6. What do we put in the head of our HTML document?
+	Title and Body
+    7. What is an id? 
+	It specifies a unique id for an HTML element used to point to a style in CSS and JS
+    8. What elements can I add an id to? 
+	Any HTML element
+    9. How many times can I use the same id on a page? 
+	 Once per HTML page
+    10. What is a class? 
+	  Used to define equal styles for elements with the same class name.
+    11. What elements can I add a class to? 
+	  All HTML elements
+    12. How many times can I use the same class on a page? 
+	   No there isn't a limit
+    13. How do I get my link to open in a new tab?
+	   for example =>  <a href="https://www.google.com" target="_blank">Google</a> 
+    14. What is the alt attribute used for? 
+	   The alt attribute provides alternative info for an image if a user cannot view the image
+    15. How do I reference an id?
+	 like a class it is placed in the opening tag with a unique name, in CSS you put a # in front of the name
+    16. What is the difference between a section and a div
+	  div is mostly used as a container for one or more html elements. a section defines a section of a document such as headers, footers, etc.
+    17. What is CSS used for? 
+	   by using a style sheet, it can save a lot of time to maintain the styles of each and every element. 
+    18. How do we select an element? Example - every h2 on the page
+	   on css just simply put the name of that element. for example h1, or p. 
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	   id's are unique identifiers used to specify a document. It's used by CSS and JS to perform certain task for unique elements. Can only have one element per id, while classes are not unique and one can use multiple classes with the same element. For example, you may use an id when using an anchor tag <a> or any element. In CSS, id is written using a # symbol with the name of the id.
+	   
+           classes are not unique and it's used to specify one or more class names per HTML element. They can be used with any HTML element. In CSS, class is written with a "." proceeded by the class name. For example, the most common use of class is by CSS Styling where you create a specified style and assign it to a particular class in HTML. So for example, a class can be used in HTML in a header element like h1-h6, or  can be used in a div.
+    20. How do we select classes in CSS?
+	   by using a "."
+    21. How do we select a p element with a single class of “human””?
+	   no it would be p.human
+    22. What is a parent child selector? When would this be useful? 
+		parent = top level element, child = a nested element.
+    23. How do you select all links within a div with the class of sidebar?
+    24. What is a pseudo selector? 
+	   It is used to define a specific state in an element
+    25. What do we use the change the spacing between lines?
+	   line-height: amount of pixels
+    26. What do we use to change the spacing between letters?
+	   letter-spacing then the value
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	   1) text-transform: uppercase;, 2 text-transform: lowercase; text-transform: capitalize;
+    28. How do I add a 1px border around my div that is dotted and black?
+	   border: 1px dotted black;
+    29. How do I select everything on the page? 
+		universal symbol "*"
+    30. How do I write a comment in CSS?
+	   /* and */
+    31. How do I find out what file I am in, when I am using the command line? look at the command line 
+    32. Using the command line - how do I see a list of files/folders in my current folder? type 'ls'
+    33. How do I remove a file via the command line? Why do I have to be careful with this? type 'rm' to remove a file. Because when the file is going to delete, it will not give you a warning. Once it deletes, it's it removed.
+    34. Why should I use version control? for example, after adding, modifying, or deleting text, version control let's you undo the changes. 
+    35. How often should I commit to github? When a task or unit of work is finished for example.
+    36. What is the command we would use to push our repo up to github? git push -u origin branch-name
+    37. Walk me through Lambda's git flow. 
+
+    - Student will create OWN version of Repo (Fork)
+    - Student will add TL as a collaborator
+    - Student then will Clone Repo
+    - Student will then create a branch (on which the student will implement the project) git checkout -b 'firstName-lastName'
+    - Student will then submit their PR into the new branch.
+        - Student will use their own student fork as the base (compare across forks).
+        - Student will add their TL as a reviewer on the PR
+    - TL then will count the HW as done by merging the HW back into master “STUDENT FORK”.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	   inline element - can be nested inside of their elements w/o disrupting the flow of content.
+	   block element - will break the flow of content on a new line.
+    2. What happens when an element is positioned absolutely? It allows you to literally place any page element exactly where you want it.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	   - 3 block level elements: p, address, and h1-h6
+	   - 2 display inline level elements: button, input and label
+	   - 1 inline-block element: 
+    5. In your own words, explain the box model. What is the fix for the box model? 
+	   - box model - The box model includes the element, padding, border and margin. It is also a box that wraps around every html element.
+	   use box-sizing: border-box to constrain the padding inside the border's boundaries set by the didth and height.
